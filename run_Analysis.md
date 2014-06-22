@@ -51,7 +51,7 @@ We use the data.table package and the lappy() function to find the mean of each 
 
 ## 2. The final tidy data 
 
-The final tidy data text file: "TidyData.txt" shows the dataset with averages by mean for each features. 
+The final tidy data text file: "TidyData.txt" shows the dataset with averages by mean for each features. Use read.table("TidyData.txt", sep="") to read the file.
 
 ## 3. The Code Book
 

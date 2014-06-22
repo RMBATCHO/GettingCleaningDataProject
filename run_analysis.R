@@ -58,7 +58,7 @@ colnames(newdata) <- as.vector(newColNames)
 library(data.table)
 DT <- data.table(newdata)
 newavgdata <- DT[,lapply(.SD, mean), by = activitytype]
-write.table(newavgdata, file="TidyData.txt", sep="")
+write.table(newavgdata, file="TidyData.txt")
 
 
 
