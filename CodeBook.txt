@@ -1,0 +1,183 @@
+DATA DICTIONARY - Samsung Galaxy S Accelerometers Data
+=======================================================
+
+
+LIBRARY USED
+===============
+
+library(data.table) -- For fast subset of data.
+
+
+FUNCTIONS USED
+================
+
+read.table() -- "Reads a file in table format and creates a data frame from it."
+rbind() -- "Takes data frames arguments and combine by columns or rows, respectively."
+cbind() -- "Takes data frames arguments and combine by columns or rows, respectively."
+grepl() -- "Searches for matches to argument pattern within each element of a character vector."
+gsub() -- "Performs replacement of the first and all matches respectively."
+merge() -- "Merges two data frames by common columns or row names."
+union() -- "Performs set union on two vectors."
+as.vector() -- "Attempts to coerce its argument into a vector."
+mean() -- "Generic function for the arithmetic mean."
+write.table() -- "write.table prints its required argument x to a file or connection."
+
+
+VARIABLE DESCRIPTION
+======================
+
+The features for variable names are described as follow, in order:
+ 
+1. 
+
+Time | Frequency. The "Time" domain signals was captured at a constant rate of 50 Hz. 
+Body | Gravity. The corner frequency is 0.3 Hz. 
+Acceleration | Gyroscopic. 3-axial raw signals in the X, Y and Z directions.
+Jerk. Jerk signals
+Magniture. Using Euclidean norm.
+Mean | StdDev. Mean and Standard Deviation value.
+
+
+VARIABLE NAMES
+===============
+
+[1] "TimeBodyAccelaration-Mean()-X"  
+
+[2] "TimeBodyAccelaration-Mean()-Y"                      
+
+[3] "TimeBodyAccelaration-Mean()-Z"                      
+
+[4] "TimeBodyAccelaration-StdDev()-X"                    
+
+[5] "TimeBodyAccelaration-StdDev()-Y"                    
+
+[6] "TimeBodyAccelaration-StdDev()-Z"                    
+
+[7] "TimeGravityAccelaration-Mean()-X"                   
+
+[8] "TimeGravityAccelaration-Mean()-Y"                   
+
+[9] "TimeGravityAccelaration-Mean()-Z"                   
+
+[10] "TimeGravityAccelaration-StdDev()-X"                 
+
+[11] "TimeGravityAccelaration-StdDev()-Y"                 
+
+[12] "TimeGravityAccelaration-StdDev()-Z"                 
+
+[13] "TimeBodyAccelarationJerk-Mean()-X"                  
+
+[14] "TimeBodyAccelarationJerk-Mean()-Y"                  
+
+[15] "TimeBodyAccelarationJerk-Mean()-Z"                  
+
+[16] "TimeBodyAccelarationJerk-StdDev()-X"                
+
+[17] "TimeBodyAccelarationJerk-StdDev()-Y"                
+
+[18] "TimeBodyAccelarationJerk-StdDev()-Z"                
+
+[19] "TimeBodyGyroscopic-Mean()-X"                        
+
+[20] "TimeBodyGyroscopic-Mean()-Y"                        
+
+[21] "TimeBodyGyroscopic-Mean()-Z"                        
+
+[22] "TimeBodyGyroscopic-StdDev()-X"                      
+
+[23] "TimeBodyGyroscopic-StdDev()-Y"                      
+
+[24] "TimeBodyGyroscopic-StdDev()-Z"                      
+
+[25] "TimeBodyGyroscopicJerk-Mean()-X"                    
+
+[26] "TimeBodyGyroscopicJerk-Mean()-Y"                    
+
+[27] "TimeBodyGyroscopicJerk-Mean()-Z"                    
+
+[28] "TimeBodyGyroscopicJerk-StdDev()-X"                  
+
+[29] "TimeBodyGyroscopicJerk-StdDev()-Y"                  
+
+[30] "TimeBodyGyroscopicJerk-StdDev()-Z"                  
+
+[31] "TimeBodyAccelarationMagnitude-Mean()"               
+
+[32] "TimeBodyAccelarationMagnitude-StdDev()"             
+
+[33] "TimeGravityAccelarationMagnitude-Mean()"            
+
+[34] "TimeGravityAccelarationMagnitude-StdDev()"          
+
+[35] "TimeBodyAccelarationJerkMagnitude-Mean()"           
+
+[36] "TimeBodyAccelarationJerkMagnitude-StdDev()"         
+
+[37] "TimeBodyGyroscopicMagnitude-Mean()"                 
+
+[38] "TimeBodyGyroscopicMagnitude-StdDev()"               
+
+[39] "TimeBodyGyroscopicJerkMagnitude-Mean()"             
+
+[40] "TimeBodyGyroscopicJerkMagnitude-StdDev()"           
+
+[41] "FrequencyBodyAccelaration-Mean()-X"                 
+
+[42] "FrequencyBodyAccelaration-Mean()-Y"                 
+
+[43] "FrequencyBodyAccelaration-Mean()-Z"                 
+
+[44] "FrequencyBodyAccelaration-StdDev()-X"               
+
+[45] "FrequencyBodyAccelaration-StdDev()-Y"               
+
+[46] "FrequencyBodyAccelaration-StdDev()-Z"               
+
+[47] "FrequencyBodyAccelarationJerk-Mean()-X"             
+
+[48] "FrequencyBodyAccelarationJerk-Mean()-Y"             
+
+[49] "FrequencyBodyAccelarationJerk-Mean()-Z"             
+
+[50] "FrequencyBodyAccelarationJerk-StdDev()-X"           
+
+[51] "FrequencyBodyAccelarationJerk-StdDev()-Y"           
+
+[52] "FrequencyBodyAccelarationJerk-StdDev()-Z"           
+
+[53] "FrequencyBodyGyroscopic-Mean()-X"                   
+
+[54] "FrequencyBodyGyroscopic-Mean()-Y"                   
+
+[55] "FrequencyBodyGyroscopic-Mean()-Z"                   
+
+[56] "FrequencyBodyGyroscopic-StdDev()-X"                 
+
+[57] "FrequencyBodyGyroscopic-StdDev()-Y"                 
+
+[58] "FrequencyBodyGyroscopic-StdDev()-Z"                 
+
+[59] "FrequencyBodyAccelarationMagnitude-Mean()"          
+
+[60] "FrequencyBodyAccelarationMagnitude-StdDev()"        
+
+[61] "FrequencyBodyBodyAccelarationJerkMagnitude-Mean()"  
+
+[62] "FrequencyBodyBodyAccelarationJerkMagnitude-StdDev()"
+
+[63] "FrequencyBodyBodyGyroscopicMagnitude-Mean()"        
+
+[64] "FrequencyBodyBodyGyroscopicMagnitude-StdDev()"      
+
+[65] "FrequencyBodyBodyGyroscopicJerkMagnitude-Mean()"    
+
+[66] "FrequencyBodyBodyGyroscopicJerkMagnitude-StdDev()"  
+
+[67] "activitytype" 
+
+		WALKING
+		WALKING_UPSTAIRS
+		WALKING_DOWNSTAIRS
+		SITTING
+		STANDING
+		LAYING
