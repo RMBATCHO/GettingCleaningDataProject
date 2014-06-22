@@ -1,4 +1,4 @@
-**Samsung Galaxy S Smartphone - Accelerometers Data** 
+**Samsung Galaxy S Accelerometers Data** 
 ========================================================
 
 ========================================================
